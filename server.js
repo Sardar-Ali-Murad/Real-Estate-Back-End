@@ -29,7 +29,7 @@ import authRouter from './routes/authRoutes.js';
 import Property from "./routes/PropertyRoute.js"
 import Orders from "./routes/OrderRoute.js"
 import NewsLetter from "./routes/NewsLetterRoute.js"
-import StripeRoute from "./routes/StripeRoute.js"
+import StripeRoute from "./routes/stripeRoute.js"
 import googleLogin from "./routes/GoogleRoute.js"
 
 
