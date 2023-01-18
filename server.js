@@ -66,11 +66,11 @@ app.use(fileUpload({ useTempFiles: true }));
 
 app.use(cors({
   credentials: true,
-<<<<<<< HEAD
-  origin: ['http://localhost:3000',"https://akbuilderpk.onrender.com"]
-=======
+// <<<<<<< HEAD
+  // origin: ['http://localhost:3000',"https://akbuilderpk.onrender.com"]
+// =======
   origin: ['http://localhost:3000','https://akbuilderpk.onrender.com']
->>>>>>> fd4d393fa2b6f5a8f400bb81065c53dfdd7f9f11
+// >>>>>>> fd4d393fa2b6f5a8f400bb81065c53dfdd7f9f11
 }))
 
 
