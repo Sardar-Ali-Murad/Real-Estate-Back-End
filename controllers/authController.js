@@ -149,7 +149,15 @@ const forgotPassword = async (req, res) => {
   if (user) {
     const passwordToken = crypto.randomBytes(70).toString('hex');
     // send email
-    const origin = 'http://localhost:3000';
+
+    //     send email
+//     In Developemnt
+//     const origin = 'http://localhost:3000';
+    
+//     In Production
+const origin="https://akbuilderpk.onrender.com"
+
+
     await sendResetPassswordEmail ({
       name: user.name,
       email: user.email,

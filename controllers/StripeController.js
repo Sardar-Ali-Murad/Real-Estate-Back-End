@@ -1,7 +1,11 @@
 import Stripe from 'stripe';
 const stripe = new Stripe("sk_test_51L3igsAX34JgbNaA19MxqmKDjvdslkw99t2XIaGTNN7ZmEH1yoBZZ4fJ5pePpG5m354ky6L04OUZx2U4RijU3k7p00EwcGMp4J");
 
-const YOUR_DOMAIN = 'http://localhost:3000'
+// For the development
+// const YOUR_DOMAIN = 'http://localhost:3000'
+
+// For the production
+const YOUR_DOMAIN="https://akbuilderpk.onrender.com"
 
 const getStripe=async (req,res)=>{
     if (req.method === 'POST') {
