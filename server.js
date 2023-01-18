@@ -71,7 +71,7 @@ app.use(function(req, res, next) {
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000']
+  origin: ['http://localhost:3000','https://akbuilderpk.onrender.com']
 }))
 
 
