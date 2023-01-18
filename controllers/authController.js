@@ -148,16 +148,24 @@ const forgotPassword = async (req, res) => {
 
   if (user) {
     const passwordToken = crypto.randomBytes(70).toString('hex');
+// <<<<<<< HEAD
     // send email
 
     //     send email
+// =======
+//     send email
+// >>>>>>> fd4d393fa2b6f5a8f400bb81065c53dfdd7f9f11
 //     In Developemnt
 //     const origin = 'http://localhost:3000';
     
 //     In Production
-const origin="https://akbuilderpk.onrender.com"
+// <<<<<<< HEAD
+// const origin="https://akbuilderpk.onrender.com"
 
 
+// =======
+    const origin="https://akbuilderpk.onrender.com"
+// >>>>>>> fd4d393fa2b6f5a8f400bb81065c53dfdd7f9f11
     await sendResetPassswordEmail ({
       name: user.name,
       email: user.email,
